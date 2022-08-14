@@ -10,7 +10,7 @@ button.innerHTML="Search";
 button.addEventListener("click",foo);
 h0.append(h1,button);
 document.body.append(h0);
-var res=fetch(`http://makeup-api.herokuapp.com/api/v1/products.json`);
+var res=fetch(`http://makeup-api.herokuapp.com/api/v1/products.json`)
 res.then((data)=>data.json())
 .then((data1)=>foo(data1));
 function foo(arr){
